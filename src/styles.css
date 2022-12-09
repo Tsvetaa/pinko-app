@@ -1,1 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% Roboto, sans-serif;
+  background-color: #F7F1E2;
+  margin: 0;
+  padding: 0;
+  background-image: url(imgs/Pink_Panther.png);
+  background-position: 99% 95%;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  position: absolute;
+  top: 30px; 
+  left: 30px;
+  width: 200px;
+  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  clip-path: circle(24px at 32px 24px);
+}
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+nav a, .mini-navbar a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #ffe082;
+}
+
+a:active {
+  background: #ffca28;
+}
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+}
+
+.navicon div:before {
+  top: -7px;
+}
+
+.navicon div:after {
+  top: 7px;
+}
